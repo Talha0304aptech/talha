@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function(){
+                $("#div1").hide();
+            });
+
+            $("#btn2").click(function(){
+                $("#div1").show();
+            });
+
+
+
+
+
+            $(".cbtn1").click(function(){
+                $(".cdiv1").hide();
+            });
+
+            $(".cbtn2").click(function(){
+                $(".cdiv1").show();
+            });
+        });
+    </script>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div><br>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    
+<hr>
+
+
+    <div class="cdiv1" style="background-color:blue ; width: 200px; height: 200px;"></div><br>  
+    <div class="cdiv1" style="background-color:blue ; width: 200px; height: 200px;"></div><br>
+    <button class="cbtn1">hide</button>
+    <button class="cbtn2">show</button>
+</body>
+
+</html>

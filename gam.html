@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+p {
+  margin-top: 20px;
+}
+form {
+  margin-top: 20px;
+}
+input {
+  width: 200px;
+  padding: 10px;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <h1>Snack Game</h1>
+    <p>Guess the snack that I'm thinking of!</p>
+    <form action="answer.php" method="post">
+      <input type="text" name="snack">
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
